@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://unpkg.com/@uiw/reset.css/reset.css');
+/* estilos tipograficos */
+
+.luckiest-guy-regular {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .abel-regular {
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .assistant-400 {
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  p{
+    line-height: 1,6;
+  }
+
+  p li{
+    line-height: 1,6;
+  }
+  h1, h2, h3, ul, p, figure{
+    padding: 1rem;
+  }
+  /* columnas */
+  .columnas{
+    columns: 3 400px;
+  }
+  /* imagenes */
+img {
+width: 100%;
+object-fit: cover;
+}
+.clip-me {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 78% 90%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.clip-otro{
+    width: 50%;
+    float: left;
+    clip-path: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+}
