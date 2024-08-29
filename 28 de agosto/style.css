@@ -1,0 +1,46 @@
+
+svg{
+    width: 50%;
+}
+h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+header{
+    background-color: darkorchid;
+}
+main{
+    background-color: rgb(188, 136, 214);
+}
+aside{
+    background-color: rgb(99, 24, 136);
+}
+footer{
+    background-color: rgb(194, 71, 255);
+}
+.container{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    gap: 1rem;
+    grid-template-areas: 
+    "cabeza cabeza cabeza"
+    "principal principal lado"
+    "pie pie pie"
+    ;
+}
+header{
+    grid-area: cabeza;
+}
+main{
+    grid-area: principal;
+}
+aside{
+    grid-area: lado;
+}
+footer{
+    grid-area: pie;
+}

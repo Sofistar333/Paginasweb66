@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librerias js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="haed">
+            <p>header</p>
+        </header>
+            <main class="main">
+                <h1>Vivus js</h1>
+                <p>
+                    Vivus is a lightweight JavaScript class (with no dependencies) that allows you to animate SVGs, giving them the appearance of being drawn. There are a variety of different animations available, as well as the option to create a custom script to draw your SVG in whatever way you like.</p>
+                <div id="my-div"></div>
+            </main>
+            <aside class="aside">
+                <p>Aside.</p>
+            </aside>
+            <footer class="foter">
+                <p>Footer.</p>
+            </footer>
+    
+    </div>
+    <script src="js/vivus.js"></script>
+    <script>
+        new Vivus ('my-div', {duration: 100, type: 'oneByOne', file: 'img/Recurso 1.svg'},);
+    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal().reveal('.haed', { delay: 250 });
+        ScrollReveal().reveal('.main', { delay: 500, scale: 0.50 });
+        ScrollReveal().reveal('.aside', { delay: 800, rotate: { x: 20, z: 20},});
+        ScrollReveal().reveal('.foter', { delay: 400, distance: '150%', origin: 'bottom'});
+    </script>
+</body>
+</html>
