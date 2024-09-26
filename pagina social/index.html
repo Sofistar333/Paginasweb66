@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extinción de Animales y Donaciones</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Definición del grid para el layout general */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #2e8b57;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            padding: 2rem;
+            background-color: #fff;
+        }
+
+        .content, .donation {
+            padding: 1.5rem;
+            background-color: #fafafa;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .content {
+            grid-column: 1 / 2;
+        }
+
+        .donation {
+            grid-column: 2 / 3;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        h1, h2 {
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .donation button {
+            background-color: #2e8b57;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .donation button:hover {
+            background-color: #1e6d47;
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+
+            .content, .donation {
+                grid-column: 1 / 2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Encabezado -->
+        <header>
+            <h1>Extinción de Animales y Donaciones</h1>
+        </header>
+
+        <!-- Contenido principal -->
+        <main>
+            <!-- Sección sobre extinción de animales -->
+            <div class="content">
+                <h2>La Extinción de los Animales</h2>
+                <p>La extinción de las especies es un proceso irreversible que afecta a la biodiversidad del planeta. Miles de especies están actualmente en peligro de desaparecer debido a factores como la pérdida de hábitat, el cambio climático y la caza furtiva.</p>
+                <p>Es crucial tomar acciones inmediatas para proteger a estos animales y sus hábitats, antes de que sea demasiado tarde.</p>
+            </div>
+
+            <!-- Sección de donaciones -->
+            <div class="donation">
+                <h2>Contribuye a la Causa</h2>
+                <p>Ayuda a salvar especies en peligro de extinción. Con tu donación, estarás apoyando programas de conservación, protección de hábitats y lucha contra la caza furtiva.</p>
+                <button>Donar Ahora</button>
+            </div>
+        </main>
+
+        <!-- Pie de página -->
+        <footer>
+            <p>&copy; 2024 Protección de Especies en Extinción. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
